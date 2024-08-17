@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Music for the Community</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Import Monteserat font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Resizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="imagetextcontainer">
+    <div class="titleimage">
+      <img src="assets/artists background image.png" style="width: 100%;">
+    </div>
+    <div class="title">
+      <h1 style="font-size: 90px">artists</h1>
+    </div>
+  </div>
+  <div class="filtercontainer">
+    <div class="filterbuttons">
+      <h2>Filter by Genre</h2>
+        <button class="filter-button active" data-name="all">All</button>
+        <button class="filter-button" data-name="pop">Pop</button>
+        <button class="filter-button" data-name="hiphop">Hip-hop</button>
+        <button class="filter-button" data-name="country">Country</button>
+        <button class="filter-button" data-name="rock">Rock</button>
+        <button class="filter-button" data-name="edm">EDM</button>
+        <button class="filter-button" data-name="jazz">Jazz</button>
+        <button class="filter-button" data-name="misc">Misc</button>
+    </div>
+  </div>
+  
+
+  <div class="artistcards">
+    <div class="card" data-name="pop">
+      <img src="assets/artists background image.png"/>
+      <div class="artistdesc">
+        <h3 class="artistname">Taylor Swift</h3>
+        <p class="artisttext">Lorem ipsum dolor...</p>
+      </div>
+    </div>
+    <div class="card" data-name="hiphop">
+      <img src="assets/artists background image.png"/>
+      <div class="artistdesc">
+        <h3 class="artistname">Lil Wayne</h3>
+        <p class="artisttext">Lorem ipsum dolor...</p>
+      </div>
+    </div>
+    <div class="card" data-name="country">
+      <img src="assets/artists background image.png"/>
+      <div class="artistdesc">
+        <h3 class="artistname">Dolly Parton</h3>
+        <p class="artisttext">Lorem ipsum dolor...</p>
+      </div>
+    </div>
+    <div class="card" data-name="rock">
+      <img src="assets/artists background image.png"/>
+      <div class="artistdesc">
+        <h3 class="artistname">Rock</h3>
+        <p class="artisttext">Lorem ipsum dolor...</p>
+      </div>
+    </div>
+    <div class="card" data-name="edm">
+      <img src="assets/artists background image.png"/>
+      <div class="artistdesc">
+        <h3 class="artistname">edm</h3>
+        <p class="artisttext">Lorem ipsum dolor...</p>
+      </div>
+    </div>
+    <div class="card" data-name="jazz">
+      <img src="assets/artists background image.png"/>
+      <div class="artistdesc">
+        <h3 class="artistname">jazz</h3>
+        <p class="artisttext">Lorem ipsum dolor...</p>
+      </div>
+    </div>
+    <div class="card" data-name="misc">
+      <img src="assets/artists background image.png"/>
+      <div class="artistdesc">
+        <h3 class="artistname">misc</h3>
+        <p class="artisttext">Lorem ipsum dolor...</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

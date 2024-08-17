@@ -1,0 +1,295 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* HOMEPAGE */
+/*import fonts */
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* top navigation bar */
+.navbar ul{
+  /* styling navigation box */
+  list-style-type: none;
+  background-color: white;
+  box-shadow: 0px 5px 5px #D3D3D3;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.navbar a {
+  /* styling navigation links */
+  text-decoration: none;
+  padding: 30px;
+  display: block;
+  text-align: center;
+  color: black;
+}
+.navbar a:hover {
+  /* styling hover navigation links */
+  color: #008080;
+}
+.navbar li {
+  /* sets navigation bar list to left */
+  float: left;
+  padding-right: 30px;
+}
+
+li {
+  /* changing font */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+}
+
+h1 {
+  /* changing font style */
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  color: white;
+}
+
+h3 {
+  /* changing font style */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+  color: black;
+}
+p {
+  /* changing font style */
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 450;
+  color: black;
+}
+
+#musicfor {
+  font-weight: 450;
+}
+
+/* top title page image and text */
+.imagetextcontainer {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 400px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.titleimage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  /* changing font */
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #FF6F61;
+  text-align: center;
+}
+
+.bulletincontainer {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.bulletinbox {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 5px #D3D3D3;
+  border-radius: 20px;
+  height: 300px;
+  
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  overflow: scroll;
+
+}
+
+
+.bulletinbox ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.bulletinbox ul li {
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.bulletinname {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.bulletinname:hover{
+  color: #008080;
+}
+
+/*new artists box */
+#box1 {
+  color: #008080;
+  font-size: 30px;
+}
+
+.newuserprofiles {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.seemore {
+  color: #008080;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+
+  box-shadow: 0px 0px 5px #D3D3D3;
+}
+.seemore:hover {
+  color: #FF6F61;
+}
+
+#box2 {
+  color: #F6C04A;
+  font-size: 30px;
+}
+
+.eventslist {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #D3D3D3;
+}
+
+.eventslist:hover {
+  transform: scale(1.05);
+}
+
+#box3 {
+  color: #FF6F61;
+  font-size: 30px;
+}
+
+/* ARTISTS PAGE */
+
+.filtercontainer {
+  position: relative;
+  max-width: 1350px;
+  width:100%;
+  padding: 10px;
+  margin: 10px auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.filterbuttons h2 {
+  color: #F6C04A
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.active {
+  background: #008080;
+  color: white;
+}
+
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.artistdesc {
+  padding: 0px;
+}
+
+.artistcards {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 5px #D3D3D3;
+  border-radius: 20px;
+  height: 350px;
+
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  
+  box-sizing: border-box;
+  overflow: auto;
+  flex-basis: 250px;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px #D3D3D3;
+  border-radius: 20px;
+  margin: 10px;
+  border-width: 0px;
+  background-color: white;
+
+  /* button text styling */
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 450;
+  color: black;
+}
+
+/* MUSIC PAGE */
