@@ -41,6 +41,15 @@ html {
   padding-right: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #FF6F61;
+}
+
 li {
   /* changing font */
   font-family: "Montserrat", sans-serif;
@@ -108,13 +117,13 @@ h2 {
   text-align: center;
 }
 
-.bulletincontainer {
+.bulletincontainer, .artistnewscontainer {
   display: flex;
   gap: 10px;
   padding: 20px;
 }
 
-.bulletinbox {
+.bulletinbox, .artistnews {
   flex: 1;
   padding: 20px;
   background-color: white;
@@ -160,9 +169,9 @@ h2 {
 }
 
 .newuserprofiles {
-  height: 40px;
-  width: 40px;
-  overflow: hidden;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
   
   padding: 10px;
   padding-bottom: 0px;
@@ -191,7 +200,7 @@ h2 {
   font-size: 30px;
 }
 
-.eventslist {
+.eventslist, .newslist {
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -294,8 +303,8 @@ button {
 
 /* MUSIC PAGE */
 .infinitecarousel img {
-  height: 100px;
-  margin: 0 40px;
+  height: 250px;
+  margin: 0 10px;
 }
 
 .infinitecarousel {
@@ -309,8 +318,7 @@ button {
 
 .newmusic {
   overflow: hidden;
-  padding: 15px 0;
-  background: #FF6F61;
+  padding: 10px 0;
   white-space: nowrap;
 }
 
@@ -320,4 +328,32 @@ button {
   } to {
     transform: translateX(-100%);
   }
+}
+
+/* artist profile page */
+
+.artistinformationcontainer {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artistbio, .latestmusic, .contactinfo {
+
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 5px #D3D3D3;
+  border-radius: 20px;
+  height: 300px;
+
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+
+  box-sizing: border-box;
+  overflow: auto;
+  flex-basis: 30%;
 }
