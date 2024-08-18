@@ -293,3 +293,31 @@ button {
 }
 
 /* MUSIC PAGE */
+.infinitecarousel img {
+  height: 100px;
+  margin: 0 40px;
+}
+
+.infinitecarousel {
+  display: inline-block;
+  animation: 20s carousel infinite linear;
+}
+
+.newmusic:hover .infinitecarousel {
+  animation-play-state: paused;
+}
+
+.newmusic {
+  overflow: hidden;
+  padding: 15px 0;
+  background: #FF6F61;
+  white-space: nowrap;
+}
+
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(-100%);
+  }
+}
